@@ -3,10 +3,22 @@ body{
     background-color: #D9D9D9;
 }
 
+/* VARIÁVEIS DE USO GERAL *************************************/
+#container{
+    background-color: #C0BBBB;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h3{
+    color: #6B4444;
+}
+/**************************************************************/
+
+
 .contatos {
     background-color: #FCB1EB;
 }
-
 .container-nav{
     display: flex;
     justify-content: center;
@@ -32,4 +44,74 @@ body{
 
 h5{
     color: #FFF;
+}
+
+.box-cont{
+    height: 100vh;
+    padding: 15px;
+}
+
+.container-photo{
+    height: 100vh;
+    padding: 15px;
+}
+
+/* hablidades */
+.know{
+    justify-content: center;
+    gap: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+
+/* hard skills */
+.skills{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sk{
+    margin-top: 1em;
+    width: 200px;
+    height: auto;
+    background-color: #D9D9D9;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#icone{
+    font-size: 20pt;
+    /*color: #6B4444;*/
+    color: rgb(233, 123, 64);
+}
+
+
+/*   Portfolio   *********/
+.project{
+    max-width: 250px;
+    height: 60vh;
+}
+
+#btn-see{
+    width: 100%;
+    background-color: #3f2319;
+    color: #C0BBBB;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #3f2319;
+    justify-self: end;
+}
+
+#btn-see:hover {
+    background-color: transparent;
+    color:#3f2319;
+    font-weight: 600;
 }

@@ -5,8 +5,12 @@ import euImage from '../../../assets/img/eu.jpeg';
 
 function Photo() {
     const photo = {whidth: '400px', height: '500px'}
+
+    const ft = {
+        
+    }
     return (
-        <div className="container-photo">
+        <div className="container-photo" style={ft}>
             <div className="main-ft">
                 <img src={euImage} alt="Darlison Silva" style={photo} />
             </div>

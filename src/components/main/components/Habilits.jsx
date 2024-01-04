@@ -1,5 +1,5 @@
 import React from 'react';
-import hTmlImage from '../../../assets/icons/html-5.png';
+import hTmlImage from '../../../assets/icons/html.png';
 import csS3 from '../../../assets/icons/css-3.png';
 import javasCript from '../../../assets/icons/js.png';
 import bootstrap from '../../../assets/icons/bootstrap.png';
@@ -9,11 +9,15 @@ import postgres from '../../../assets/icons/postgre.png';
 import rea from '../../../assets/icons/science.png';
 import typeScript from '../../../assets/icons/typescript.png';
 import nodeI from '../../../assets/icons/nodejs.png';
+import gitI from '../../../assets/icons/git.png';
+import gitHI from '../../../assets/icons/github.png';
+import figI from '../../../assets/icons/figma.png';
 
 function Habilits() {
+    
     return (
-        <div className="container-hab">
-            <h3>Dentre minhas principais habilidades destacam-se às seguintes</h3>
+        <div className="container text-center mt-5" id='container'>
+            <h3>Soft Skills</h3>
             <div className="know">
                 <div className="item">
                     <div className="cont-icon">
@@ -94,18 +98,21 @@ function Habilits() {
 
                 <div className="item">
                     <div className="cont-icon">
+                        <img src={gitI} alt="git" />
                     </div>
                     <span>Git</span>
                 </div>
 
                 <div className="item">
                     <div className="cont-icon">
+                        <img src={gitHI} alt="github" />
                     </div>
                     <span>Github</span>
                 </div>
 
                 <div className="item">
                     <div className="cont-icon">
+                        <img src={figI} alt="figma" />
                     </div>
                     <span>Figma</span>
                 </div>

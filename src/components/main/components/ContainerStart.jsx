@@ -4,18 +4,23 @@ import Photo from "./Photo";
 import Redes from "./Redes";
 
 function ContainerStart() {
-    const mr = {marginTop: '1em', backgroundColor: '#efefef',};
+    const mr = {marginTop: '1em', 
+    backgroundColor: '#efefef', 
+    justifyContent: 'center',
+    textAlign: 'center'
+    };
     const bb = { marginBottom: '1em',};
     return(
-        <div className="container" style={mr}>
-            <div className="row d-flex align-items-center justify-content-between">
+        <div className="container mx-auto" style={mr}>
+            <div className="row d-flex align-items-center justify-content-center justify-content-between">
                 <div className="col-md-5">
-                    <div style={bb}>
-                        <AbouMe />
-                    </div>
-                    
-                    <div style={bb}>
-                        <Redes />
+                    <div className="box-cont d-flex flex-column justify-content-between">
+                         <div style={bb} className="mb-auto">
+                             <AbouMe />
+                         </div>
+                         <div style={bb}>
+                             <Redes />
+                         </div>
                     </div>
                 </div>
 

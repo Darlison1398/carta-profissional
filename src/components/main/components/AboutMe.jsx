@@ -1,6 +1,6 @@
 function AbouMe() {
     const me = {
-        backgroundColor: 'red',
+        textAlign: 'left',
     }
     return (
         <div className="about-me" style={me}>

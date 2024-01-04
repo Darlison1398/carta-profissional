@@ -10,18 +10,11 @@ function Main() {
     return(
         <div className="container">
             <ContainerStart />
-            <br />
-            <br />
             <Habilits />
-            <br />
             <Resume />
-            <br />
             <HardSkills />
-            <br />
             <Read />
-            <br />
             <Portfolio/>
-            <br />
             <Zap />
         </div>
     );

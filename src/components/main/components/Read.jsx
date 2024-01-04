@@ -1,6 +1,8 @@
+import React from "react";
+
 function Read() {
     return (
-        <div className="container-read-me">
+        <div className="container mt-5">
             <p>
                 Sou um profissional com habilidades sólidas em comunicação oral e escrita, 
                 inglês intermediário e facilidade com tecnologia. Minha experiência em 
