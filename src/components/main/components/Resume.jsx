@@ -4,7 +4,7 @@ function Resume() {
 
     return (
         <div className="container mt-5">
-            <h3>Resumo profissional</h3>
+            <h3 className="text-center">Resumo profissional</h3>
             <p className="">
                 Como profissional de tecnologia, possuo uma sólida experiência em desenvolvimento 
                 web, tanto no front-end quanto no back-end. Ao longo da minha trajetória, já 

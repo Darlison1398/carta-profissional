@@ -10,7 +10,7 @@ body{
     border-radius: 10px;
 }
 
-h3{
+h3, h4{
     color: #6B4444;
 }
 /**************************************************************/
@@ -98,8 +98,14 @@ h5{
 .project{
     max-width: 250px;
     height: 60vh;
+    background-color: #FFFDFD;
+    padding: 15px;
+    border-radius: 14px;
 }
 
+.project h5 {
+    color: #6B4444;
+}
 #btn-see{
     width: 100%;
     background-color: #3f2319;
@@ -114,4 +120,16 @@ h5{
     background-color: transparent;
     color:#3f2319;
     font-weight: 600;
+}
+
+
+/*  ZAP   **************************/
+.btn-zap{
+    height: 70px;
+    background-color: #7eee6f;
+    color: #3f2319;
+    border-radius: 20px;
+    font-size: 18pt;
+    border:none; 
+    padding: 10px;
 }
