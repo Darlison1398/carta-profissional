@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBullhorn, faUsersGear, faLaptop, faBusinessTime  } from '@fortawesome/free-solid-svg-icons';
+import { faBullhorn, faUsersGear, faLaptop, faBusinessTime, faPersonHarassing, faUserGear  } from '@fortawesome/free-solid-svg-icons';
 
 function HardSkills() {
 
@@ -13,13 +13,20 @@ function HardSkills() {
 
         facilidade com tecnologia
         <FontAwesomeIcon icon="fa-solid fa-user-gear" />
-    */}
+
+
+        Icones
+        <FontAwesomeIcon icon={faPersonHarassing} />
+        <FontAwesomeIcon icon={faUserGear} />
+        <FontAwesomeIcon icon={faUsersGear} />
+
+        */}
 
     return (
         <div className="container mt-5 text-center" id="container">
             <h3>HardSkills</h3>
 
-            <section className="skills">
+            <section className="skills text-center">
                 <div className="sk" >
                     <div className="cont-i">
                         <FontAwesomeIcon icon={faBullhorn} id="icone" />
@@ -38,17 +45,19 @@ function HardSkills() {
                     <div className="cont-i">
                         <FontAwesomeIcon icon= {faLaptop} id="icone" />
                     </div>
-                    <span>Facilidade com tecnologia</span>
+                    <span>Informática</span>
                 </div>
 
                 <div className="sk">
-                    <div className="cont-i"></div>
+                    <div className="cont-i">
+                        <FontAwesomeIcon icon={faUserGear} id="icone" />
+                    </div>
                     <span>Adaptabilidade</span>
                 </div>
 
                 <div className="sk">
                     <div className="cont-i">
-
+                        <FontAwesomeIcon icon={faPersonHarassing} id="icone" />
                     </div>
 
                     <span>Inglês intermediário</span>

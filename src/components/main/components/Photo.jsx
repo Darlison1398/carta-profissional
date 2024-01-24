@@ -4,20 +4,22 @@ import euImage from '../../../assets/img/eu.jpeg';
 // Agora você pode usar a variável euImage para a referência à imagem.
 
 function Photo() {
-    const photo = {whidth: '400px', height: '500px'}
+   // const photo = {whidth: '400px', height: '500px'}
 
-    const ft = {
-        
-    }
     return (
-        <div className="container-photo" style={ft}>
-            <div className="main-ft">
+        <div className="container-photo">
+            {/*<div className="main-ft">
                 <img src={euImage} alt="Darlison Silva" style={photo} />
-            </div>
-            <p>
-                Darlison de Souza Silva, 25 anos, natural de Itaituba- Pa, 
-                residente em Tubarão-SC
-            </p>
+            </div>*/}
+            <figure class="image-block">
+            	<img src={euImage} alt="Darlison Silva" />
+            	<figcaption>
+                    <p>
+                        Darlison Silva, 25 anos, natural de Itaituba - PA, residente em Tubarão - SC.
+                    </p>
+            	</figcaption>
+            </figure>
+
         </div>
     );
 };

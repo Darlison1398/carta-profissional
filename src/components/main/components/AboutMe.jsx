@@ -6,11 +6,12 @@ function AbouMe() {
         <div className="about-me" style={me}>
             <h3>Sobre mim</h3>
             <p>
-                Apresento-lhe o meu currículo o qual contém algumas informações a meu 
-                respeito. Sou uma pessoa dinâmica, possuo boa comunicação e sei 
-                trabalhar em equipe. Tenho habilidades com informática, desenvolvimento 
-                front-end, experiência como suporte técnico, desenvolvimento back-end, 
-                testes, atendimento ao público e metodologias ágeis (Scrum).
+                Apresento-lhe meu site pessoal/profissional, onde compartilho informações sobre 
+                mim, meus projetos, habilidades pessoais, entre outros aspectos. Sou uma pessoa 
+                dinâmica, comunicativa e trabalho bem em equipe. Possuo habilidades em 
+                informática, desenvolvimento front-end e back-end, design web, banco de dados, 
+                testes, Linux, suporte técnico, atendimento ao público e também tenho 
+                experiência com metodologias ágeis, como o Scrum.
             </p>
         </div>
     );
