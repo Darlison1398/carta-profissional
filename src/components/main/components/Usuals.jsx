@@ -5,6 +5,7 @@ function Usuals () {
 
     return (
         <div class="container-usual" style={mt}>
+            <h3>Tecnolgias que eu já trabalhei em alguns momentos.</h3>
             <ul class="cards">
               <li class="card cards__item">
                 <div class="card__frame">

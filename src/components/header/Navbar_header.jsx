@@ -13,13 +13,26 @@ import ModalG from './ModalG';
 
 function Navbar_header() {  // Renomeei a função para MeuNavbar
 
+  const logo = {color: '#FFF', fontSize: '18pt'};
+
+  const navDropdownStyle =  {
+    padding: '0',
+    margin: '0',
+    color: '#FFF',
+  }
 
   const navbar = {
     display: 'flex',
-    justifyContent: 'flex-start',  // Alinhamento à esquerda
+    //justifyContent: 'flex-start',  // Alinhamento à esquerda
     justifyContent: 'space-between',
-    backgroundColor: '#4B627D',
+    backgroundColor: ' #896c6c',
+    color: '#FFF',
   };
+
+  //const tx = {backgroundColor:'red'};
+
+  const bbb = {color: '#FFF', marginLeft: 'auto'};
+
 
 
   const [showModal, setShowModal] = useState(false);
@@ -31,46 +44,50 @@ function Navbar_header() {  // Renomeei a função para MeuNavbar
     <div>
       <NavbarBootstrap expand="lg" className="justify-content-between" style={navbar}>
         <Container>
-          <NavbarBootstrap.Brand href="#home">Darlison Silva</NavbarBootstrap.Brand>
+
+          <NavbarBootstrap.Brand href="#home" style={logo}>Darlison Silva</NavbarBootstrap.Brand>
+         
           <NavbarBootstrap.Toggle aria-controls="basic-navbar-nav" />
+
           <NavbarBootstrap.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto left">
-              <Nav.Link href="#">Home</Nav.Link>
+            <Nav className='justify-content-end' style={bbb}>
 
-              <Nav.Link href="#" onClick={handleShow}>Projeto</Nav.Link>
-              <ModalG show={showModal} handleClose={handleClose} />
-
-
-              <NavDropdown title="Contatos" id="basic-nav-dropdown" style={{ margin: 0, padding: 0 }}>
+              <NavDropdown title="Contatos" id="basic-nav-dropdown" style={navDropdownStyle}>
                 <div className="contatos" style={{ margin: 0, padding: 0 }}>    
                   <NavDropdown.Item href="#action/3.1"> 
-                    <FontAwesomeIcon icon={faPhone} /> &nbsp;Fale comigo
+                    <FontAwesomeIcon icon={faPhone} style={{color: "#d53939", fontSize: "16pt"}} /> &nbsp;Fale comigo
                   </NavDropdown.Item>
                   
                   <NavDropdown.Item href="#action/3.2">
-                    <FontAwesomeIcon icon={faWhatsapp} /> &nbsp;Me chame no zap
+                    <FontAwesomeIcon icon={faWhatsapp} style={{color: "#6cf54e", fontSize: "16pt"}} /> &nbsp;Me chame no zap
                   </NavDropdown.Item>
   
                   <NavDropdown.Item href="#action/3.2">
-                    <FontAwesomeIcon icon={faEnvelope} /> &nbsp;Me envie um Email
+                    <FontAwesomeIcon icon={faEnvelope} style={{color: "hsl(60, 94%, 60%)", fontSize: "16pt"}} /> &nbsp;Me envie um Email
                   </NavDropdown.Item>
   
                   <NavDropdown.Item href="#action/3.3">
-                    <FontAwesomeIcon icon={faLinkedin} /> &nbsp;Visite meu Linkedin
+                    <FontAwesomeIcon icon={faLinkedin} style={{color: "#508ef9", fontSize: "16pt"}} /> &nbsp;Visite meu Linkedin
                   </NavDropdown.Item>
   
                   <NavDropdown.Item href="#action/3.3">
-                    <FontAwesomeIcon icon={faGithub} /> &nbsp; Conheça meus projetos
+                    <FontAwesomeIcon icon={faGithub} style={{color: "#6B4444", fontSize: "16pt"}} /> &nbsp;Conheça meus projetos
                   </NavDropdown.Item>
   
                   <NavDropdown.Item href="#action/3.3">
-                    <FontAwesomeIcon icon={faInstagram} /> &nbsp; Siga-me no Instagram
+                    <FontAwesomeIcon icon={faInstagram} style={{color: "#fa39a3", fontSize: "16pt"}} /> &nbsp;Siga-me no Instagram
                   </NavDropdown.Item>
   
                 </div>
               </NavDropdown>
+
+              <Nav.Link href="#" onClick={handleShow} style={{color: '#FFF'}}>Projeto</Nav.Link>
+              <ModalG show={showModal} handleClose={handleClose} />
+              <Nav.Link href="#" style={{color: '#FFF'}}>Mais...</Nav.Link>
+
             </Nav>
           </NavbarBootstrap.Collapse>
+
         </Container>
       </NavbarBootstrap>
     </div>

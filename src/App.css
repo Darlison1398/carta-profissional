@@ -17,8 +17,11 @@ h3, h4{
 
 
 .contatos {
-    background-color: #FCB1EB;
+    background-color: #D9D9D9;
+    color: hsl(60, 94%, 60%);
 }
+
+
 .container-nav{
     display: flex;
     justify-content: center;
