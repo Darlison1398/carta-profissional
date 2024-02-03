@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import React from 'react';
+import React, { useState, useEffect  } from 'react';
+//import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavbarBootstrap from 'react-bootstrap/Navbar';  // Renomeei para NavbarBootstrap
@@ -7,9 +7,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Ícones sólidos
 import { faInstagram, faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
 import ModalG from './ModalG';
-
+import redirectToGitHub from '../../assets/js/redirect/redirectToGitHub';
+import redirectToInstagram from '../../assets/js/redirect/redirectToInstagram';
+import redirectToLinkedIn from '../../assets/js/redirect/redirectToLinkedIn';
+import redirectToWhats from '../../assets/js/redirect/redirectToWhats';
 
 function Navbar_header() {  // Renomeei a função para MeuNavbar
 
@@ -25,7 +27,7 @@ function Navbar_header() {  // Renomeei a função para MeuNavbar
     display: 'flex',
     //justifyContent: 'flex-start',  // Alinhamento à esquerda
     justifyContent: 'space-between',
-    backgroundColor: ' #896c6c',
+    backgroundColor: '#003660',
     color: '#FFF',
   };
 
@@ -33,12 +35,11 @@ function Navbar_header() {  // Renomeei a função para MeuNavbar
 
   const bbb = {color: '#FFF', marginLeft: 'auto'};
 
-
-
   const [showModal, setShowModal] = useState(false);
-
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
+
+
 
   return (
     <div>
@@ -58,23 +59,23 @@ function Navbar_header() {  // Renomeei a função para MeuNavbar
                     <FontAwesomeIcon icon={faPhone} style={{color: "#d53939", fontSize: "16pt"}} /> &nbsp;Fale comigo
                   </NavDropdown.Item>
                   
-                  <NavDropdown.Item href="#action/3.2">
-                    <FontAwesomeIcon icon={faWhatsapp} style={{color: "#6cf54e", fontSize: "16pt"}} /> &nbsp;Me chame no zap
+                  <NavDropdown.Item onClick={redirectToWhats}>
+                    <FontAwesomeIcon icon={faWhatsapp} style={{color: "#6cf54e", fontSize: "16pt"}}/> &nbsp;Me chame no zap
                   </NavDropdown.Item>
   
                   <NavDropdown.Item href="#action/3.2">
                     <FontAwesomeIcon icon={faEnvelope} style={{color: "hsl(60, 94%, 60%)", fontSize: "16pt"}} /> &nbsp;Me envie um Email
                   </NavDropdown.Item>
   
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item onClick={redirectToLinkedIn}>
                     <FontAwesomeIcon icon={faLinkedin} style={{color: "#508ef9", fontSize: "16pt"}} /> &nbsp;Visite meu Linkedin
                   </NavDropdown.Item>
   
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item onClick={redirectToGitHub}>
                     <FontAwesomeIcon icon={faGithub} style={{color: "#6B4444", fontSize: "16pt"}} /> &nbsp;Conheça meus projetos
                   </NavDropdown.Item>
   
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item onClick={redirectToInstagram}>
                     <FontAwesomeIcon icon={faInstagram} style={{color: "#fa39a3", fontSize: "16pt"}} /> &nbsp;Siga-me no Instagram
                   </NavDropdown.Item>
   

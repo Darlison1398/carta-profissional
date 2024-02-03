@@ -5,7 +5,7 @@ function Footer() {
         justifyContent: 'center',
         alignItems: 'center',
         minHeight: '60px',
-        backgroundColor: '#4B627D',
+        backgroundColor: '#003660',
         textAlign: 'center',
         color: '#FFF',
       };

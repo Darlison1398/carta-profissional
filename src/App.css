@@ -1,25 +1,24 @@
 body{
     /*background-color: rgb(37, 11, 50);*/
-    background-color: #D9D9D9;
+    /*background-color: #D9D9D9;*/
+    background-color: #FFF;
 }
 
 /* VARIÁVEIS DE USO GERAL *************************************/
 #container{
-    background-color: #C0BBBB;
+    background-color: #efefef;
     padding: 10px;
     border-radius: 10px;
 }
 
 h3, h4{
-    color: #6B4444;
+    /*color: #6B4444;*/
+    color: #222e5b;
 }
 /**************************************************************/
 
 
-.contatos {
-    background-color: #D9D9D9;
-    color: hsl(60, 94%, 60%);
-}
+
 
 
 .container-nav{
@@ -30,7 +29,7 @@ h3, h4{
 
 /* Redes   icones  */
 .redes{
-    color: #6B4444;
+    color: #f6c0d5;
     font-size: 25pt;
     gap: 20px;
 }
@@ -107,7 +106,11 @@ h5{
 #icone{
     font-size: 20pt;
     /*color: #6B4444;*/
-    color: rgb(233, 123, 64);
+    color: #222e5b;
+}
+
+.sk:hover #icone {
+    color: #f7308c;
 }
 
 
@@ -115,7 +118,8 @@ h5{
 .project{
     max-width: 250px;
     height: 60vh;
-    background-color: #FFFDFD;
+    background-color: #519efd;
+    color: #FFF;
     padding: 15px;
     border-radius: 14px;
     display: flex;
@@ -124,22 +128,22 @@ h5{
 }
 
 .project h5 {
-    color: #6B4444;
+    color: #222e5b;
 }
 #btn-see{
     width: 100%;
-    background-color: #3f2319;
-    color: #C0BBBB;
+    background-color: #222e5b;
+    color: #FFF;
     height: 40px;
     border-radius: 20px;
-    border: 2px solid #3f2319;
+    border: 2px solid #222e5b;
     justify-self: end;
     margin-top: auto;
 }
 
 #btn-see:hover {
     background-color: transparent;
-    color:#3f2319;
+    color:#FFF;
     font-weight: 600;
 }
 
@@ -147,14 +151,19 @@ h5{
 /*  ZAP   **************************/
 .btn-zap{
     height: 70px;
-    background-color: #7eee6f;
-    color: #3f2319;
+    background-color: #1759a8;
+    color: #FFF;
     border-radius: 20px;
-    font-size: 18pt;
+    font-size: 16pt;
     border:none; 
-    padding: 10px;
+    padding: 15px;
 }
 
+#icon-zap{
+    color: #f6c0d5;
+    font-size: 20pt;
+    font-weight: 600;
+}
 
 
 
@@ -203,9 +212,9 @@ h5{
     width: 100%;
     margin: 0;
     padding: 30px;
-    background-color: #C0BBBB;
+    background-color: #FFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    color: #FFF;
+    color: #222e5b;
     line-height: 1;
     transition: 0.25s;
   }
