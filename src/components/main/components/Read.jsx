@@ -3,7 +3,7 @@ import React from "react";
 function Read() {
     return (
         <div className="container mt-5">
-            <p>
+            <p className="text-hard">
                 Sou um profissional com habilidades sólidas em comunicação oral e escrita, 
                 inglês intermediário e facilidade com tecnologia. Minha experiência em 
                 trabalho em equipe e adaptabilidade foi adquirida em projetos colaborativos, 

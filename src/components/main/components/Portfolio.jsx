@@ -1,8 +1,33 @@
+import { useLayoutEffect } from "react";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 function Portfolio() {
+
+    
+    gsap.registerPlugin(ScrollTrigger);
+    useLayoutEffect( () => {
+        gsap.to(".project", {
+            x:0,
+            opacity: 1, 
+            scrollTrigger: {
+                trigger: ".project",
+                //markers:true,
+                start: "top 400px",
+                end: "botton 200px",
+                scrub: true,
+            }
+        })
+        
+        return () => {
+            gsap.killTweensOf(".project")
+        }
+    }, []);
+    
+
     return (
         <div className="container mt-5">
             <h3 className="text-center">Portfólio pessoal</h3>

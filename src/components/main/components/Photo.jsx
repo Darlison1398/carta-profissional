@@ -1,17 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import euImage from '../../../assets/img/eu.jpeg';
 
-// Agora você pode usar a variável euImage para a referência à imagem.
-
 function Photo() {
-   // const photo = {whidth: '400px', height: '500px'}
+
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        // Atualizar a largura da tela quando a janela for redimensionada
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        // Adicionar ouvinte de redimensionamento
+        window.addEventListener('resize', handleResize);
+
+        // Remover o ouvinte ao desmontar o componente
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const isSmallScreen = windowWidth <= 600;
+
+    const photoStyle = {
+        marginLeft: isSmallScreen ? 'auto' : '40px', backgroundColor: 'red',
+    };
+
+
+    
 
     return (
         <div className="container-photo">
-            {/*<div className="main-ft">
-                <img src={euImage} alt="Darlison Silva" style={photo} />
-            </div>*/}
-            <figure class="image-block">
+            <figure class="image-block ml-auto" style={photoStyle}>
             	<img src={euImage} alt="Darlison Silva" />
             	<figcaption>
                     <p>

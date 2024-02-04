@@ -1,3 +1,4 @@
+import { useLayoutEffect } from "react";
 import React from 'react';
 import hTmlImage from '../../../assets/icons/html.png';
 import csS3 from '../../../assets/icons/css-3.png';
@@ -12,8 +13,32 @@ import nodeI from '../../../assets/icons/nodejs.png';
 import gitI from '../../../assets/icons/git.png';
 import gitHI from '../../../assets/icons/github.png';
 import figI from '../../../assets/icons/figma.png';
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 function Habilits() {
+
+        
+    gsap.registerPlugin(ScrollTrigger);
+    useLayoutEffect( () => {
+        gsap.to(".item", {
+            x:0,
+            opacity: 1, 
+            scrollTrigger: {
+                trigger: ".item",
+                //markers:true,
+                start: "top 650px",
+                end: "bottom 500px",
+                scrub: true,
+            }
+        })
+        
+        return () => {
+            gsap.killTweensOf(".item")
+        }
+    }, []);
+    
+
     
     return (
         <div className="container text-center mt-5" id='container'>

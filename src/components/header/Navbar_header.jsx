@@ -12,6 +12,7 @@ import redirectToGitHub from '../../assets/js/redirect/redirectToGitHub';
 import redirectToInstagram from '../../assets/js/redirect/redirectToInstagram';
 import redirectToLinkedIn from '../../assets/js/redirect/redirectToLinkedIn';
 import redirectToWhats from '../../assets/js/redirect/redirectToWhats';
+import { FaBars } from 'react-icons/fa';
 
 function Navbar_header() {  // Renomeei a função para MeuNavbar
 
@@ -42,13 +43,16 @@ function Navbar_header() {  // Renomeei a função para MeuNavbar
 
 
   return (
-    <div>
+    <div className='header-navbar'>
       <NavbarBootstrap expand="lg" className="justify-content-between" style={navbar}>
         <Container>
 
           <NavbarBootstrap.Brand href="#home" style={logo}>Darlison Silva</NavbarBootstrap.Brand>
          
-          <NavbarBootstrap.Toggle aria-controls="basic-navbar-nav" />
+          <NavbarBootstrap.Toggle aria-controls="basic-navbar-nav">
+            <FaBars style={{ color: '#fff', fontSize: '20pt',  border: 'white'}} />
+          </NavbarBootstrap.Toggle>
+
 
           <NavbarBootstrap.Collapse id="basic-navbar-nav">
             <Nav className='justify-content-end' style={bbb}>
