@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import redirectoClimaTemp from "../../../assets/js/redirect/redirectToClimaTemp";
+import redirectoCurriculu_web from "../../../assets/js/redirect/redirectToCurriculu_web";
+import redirectoWordPress from "../../../assets/js/redirect/redirectToWordPress";
+import redirectToProjetct from "../../../assets/js/redirect/redirectToProjetct";
 
 function Portfolio() {
 
@@ -42,7 +46,7 @@ function Portfolio() {
                         seguintes tecnologias: <span>Html5, Css3, Bootstrap e Javascript</span>
                     </p>
 
-                    <button id="btn-see">Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
+                    <button id="btn-see" onClick={redirectoClimaTemp}>Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
                 </div>
 
                 <div className="project">
@@ -51,7 +55,7 @@ function Portfolio() {
                         No entanto, ele foi desenvolvido com as seguintes tecnologias:
                         <span>Html5, Css, Javascript e Bootstrap</span>
                     </p>
-                    <button id="btn-see">Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
+                    <button id="btn-see" onClick={redirectoCurriculu_web}>Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
                 </div>
                 <div className="project">
                     <h5>Drsilva Start</h5>
@@ -59,7 +63,7 @@ function Portfolio() {
                         Um simples site desenvolvido em Wordpress. Aqui, o foco principal que 
                         resolvi demonstrar foi a minha habilidade com a escrita.
                     </p>
-                    <button id="btn-see">Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
+                    <button id="btn-see" onClick={redirectoWordPress}>Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
                 </div>
 
                 <div className="project">
@@ -67,10 +71,12 @@ function Portfolio() {
                     <p>
                         Clique no botão abaixo para ver o escopo desse sistema no figma
                     </p>
-                    <button id="btn-see">Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
+                    <button id="btn-see" onClick={redirectToProjetct}>Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
                 </div>
             </section>
+
         </div>
+        
     );
 };
 

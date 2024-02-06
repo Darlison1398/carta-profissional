@@ -50,10 +50,6 @@ h5{
     padding: 15px;
 }
 
-.container-photo{
-    height: 100vh;
-    padding: 15px;
-}
 
 /* hablidades */
 .know{
@@ -260,6 +256,13 @@ h5{
 
 /********************** FIM    ************/
 
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -10%;
+}
 
 
 
@@ -411,7 +414,57 @@ h5{
 
 
 /***************    RESPONSIVIDADE   ***************/
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+    
+    .ct {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-cont{
+        height: 80vh;
+        padding: 15px;
+    }
+
+    .about-me{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me h3, p {
+        text-align: center;
+    }
+
+    .about-me p {
+        width: 100%;
+    }
+
+    figure img + figcaption {
+        display: block;
+        bottom: 0;
+    }
+    
+    /* Desativar efeito hover */
+    figure:hover {
+        box-shadow: none;
+    }
+
+    figure:hover img {
+        transform: none;
+    }
+
+    figure:hover figcaption {
+        bottom: 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
     body {
         margin: 0;
         padding: 0;
@@ -433,10 +486,6 @@ h5{
         box-sizing: border-box;
     }
 
-
-
-
-
     .cont-start {
         width: 100%;
         overflow-x: hidden;
@@ -447,20 +496,6 @@ h5{
     }
 
     /*   foto  */
-    .container-photo {
-        padding: 0;
-        margin-top: 2em;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: -10px;
-        overflow-x: 'hidden';
-        box-sizing: border-box;
-    }
-
     figure {
         display: flex;
         align-items: center;
@@ -498,7 +533,6 @@ h5{
         padding: 10px;
     }
 
-
     /*  Portfólio */
     .container-box {
         justify-content: center;
@@ -509,7 +543,20 @@ h5{
     }
     .project{
         margin-top: .5em;
+        height: 50vh;
     }
 
-    
+    /* botão zap */
+    .btn-zap{
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 1em;
+        font-size: 14pt;
+    }   
+}
+
+@media (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
 }

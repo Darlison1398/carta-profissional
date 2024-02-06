@@ -4,7 +4,7 @@ import euImage from '../../../assets/img/eu.jpeg';
 function Photo() {
 
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    /*const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         // Atualizar a largura da tela quando a janela for redimensionada
@@ -21,18 +21,19 @@ function Photo() {
         };
     }, []);
 
-    const isSmallScreen = windowWidth <= 600;
+    const isSmallScreen = windowWidth <= 700;
 
     const photoStyle = {
-        marginLeft: isSmallScreen ? 'auto' : '40px', backgroundColor: 'red',
-    };
+        marginLeft: isSmallScreen ? 'auto' : '40px',
+    };*/
 
 
     
 
     return (
         <div className="container-photo">
-            <figure class="image-block ml-auto" style={photoStyle}>
+            
+            <figure class="image-block ml-auto" >
             	<img src={euImage} alt="Darlison Silva" />
             	<figcaption>
                     <p>
